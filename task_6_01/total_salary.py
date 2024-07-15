@@ -6,7 +6,7 @@ def total_salary(path):
 
             for line in file:
                 try:
-                    name, salary_str = line.strip().split(',')
+                    _, salary_str = line.strip().split(',')
                     total_salary += int(salary_str)
                     developer_count += 1
                 except ValueError:
