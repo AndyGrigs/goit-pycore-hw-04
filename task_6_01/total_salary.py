@@ -19,9 +19,7 @@ def total_salary(path):
     except FileNotFoundError:
         print("Файл не знайдено.")
         return None, None
-    except Exception as e:
-        print(f"Ой, помилочка: {e}")
-        return None, None
+    
 
 # Приклад використання функції:
 path_to_file = "salary_file.txt"
